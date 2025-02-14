@@ -1,0 +1,85 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+
+.header-body {
+  align-items: center;
+}
+
+.header-tools {
+  min-width: 35%;
+}
+
+.select-store {
+  cursor: pointer;
+  gap: 5px;
+
+  &:hover {
+    .store-icon {
+      background: variables.$dark-green;
+
+    }
+
+    .icon-shopping-cart {
+      background: variables.$white;
+
+    }
+
+    .store-name {
+
+      span {
+        color: variables.$gray;
+
+      }
+
+      .icon-header-arrow {
+        background: variables.$gray;
+
+      }
+    }
+
+  }
+}
+
+.store-icon {
+  flex: 0 0 50px;
+  height: 50px;
+  background: variables.$white;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.store-name {
+  padding: 10px;
+  gap: 14px;
+
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: variables.$black;
+    transition: .3s;
+  }
+
+  .icon-header-arrow {
+    background: variables.$dark-blue;
+    font-size: 12px;
+    flex: 0 0 12px;
+    transition: .3s;
+
+  }
+
+}
+
+.icon-shopping-cart {
+  background: variables.$dark-blue;
+  font-size: 18px;
+}
+
+
+
+.header-actions {
+  gap: 20px;
+  min-width: 190px;
+
+}
+

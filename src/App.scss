@@ -1,0 +1,19 @@
+@use 'assets/scss/variables';
+@use 'assets/scss/mixin';
+.wrapper {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.main {
+  //max-width: 1634px;
+  width: 100%;
+  //padding: 50px 50px 116px 50px;
+  //border-radius: 50px 0 0 50px ;
+  position: relative;
+  z-index: 2;
+}
+
+#root{
+  overflow: hidden;
+}

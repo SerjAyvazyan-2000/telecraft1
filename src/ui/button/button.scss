@@ -1,0 +1,94 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+
+
+.btn-green {
+  padding: 16px 25px;
+  background: variables.$dark-green2;
+  border-radius: 10px;
+  gap: 10px;
+  transition: .3s;
+  justify-content: center;
+
+  .icon-plus {
+    font-size: 18px;
+    background: variables.$white;
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: variables.$white;
+
+  }
+
+  &:hover {
+    background: variables.$gray;
+
+  }
+}
+
+
+.btn-white {
+  padding: 16px 25px;
+  background: variables.$white;
+  border: 1px solid variables.$dark-green2;
+  border-radius: 10px;
+  gap: 10px;
+  transition: .3s;
+  justify-content: center;
+
+  .icon-plus {
+    font-size: 18px;
+    background: variables.$white;
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: variables.$dark-blue3;
+
+  }
+
+  &:hover {
+    background: variables.$gray;
+
+    span {
+      color: variables.$white;
+
+    }
+  }
+}
+
+.btn-primary{
+  padding: 16px 25px;
+  background: variables.$light-primary2;
+  border-radius: 10px;
+  gap: 10px;
+  transition: .3s;
+  justify-content: center;
+
+
+  span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: variables.$white;
+
+  }
+
+  &:hover {
+    background: variables.$gray;
+
+  }
+}
+
+
+.clients-bnt{
+  min-width: 280px;
+}
+.pricing-create-btn{
+  min-width: 227px;
+}

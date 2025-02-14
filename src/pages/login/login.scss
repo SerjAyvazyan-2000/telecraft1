@@ -1,0 +1,164 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+
+.login-section{
+  gap: 18px;
+}
+.login-description{
+  padding-top: 50px;
+  max-width: 674px;
+  width: 100%;
+}
+.login-media{
+  padding-top: 20px;
+  max-width: 1183px;
+  width: 100%;
+
+}
+.login-form{
+  margin-top: 200px;
+  max-width: 407px;
+  width: 100%;
+  gap: 20px;
+}
+.login-inputs-box{
+  width: 100%;
+  gap: 20px;
+}
+
+.login-label{
+  max-width: 407px;
+  width: 100%;
+  height: 46px;
+  position: relative;
+
+  input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid variables.$white3;
+    border-radius: 10px;
+    padding: 10px 10px 10px 44px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: variables.$gray7;
+    transition: .3s;
+
+    &:focus{
+      border: 1px solid variables.$dark-green;
+    }
+
+  }
+}
+.login-bnt{
+  width: 100%;
+
+  button{
+    width: 100%;
+
+  }
+}
+.input-icon{
+  font-size: 24px;
+  background: variables.$light-primary2;
+  position: absolute;
+  left: 10px;
+  top: 11px;
+}
+.login-tools{
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.remember-me{
+  gap: 10px;
+  cursor: pointer;
+  transition: .3s;
+
+
+  &:hover{
+    p{
+      color: variables.$dark-green;
+
+    }
+
+  }
+
+  p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: variables.$gray8;
+    transition: .3s;
+
+  }
+}
+.remember-me-icon{
+  width: 19px;
+  height: 19px;
+  border: 1px solid variables.$white3;
+  background: variables.$white;
+  position: relative;
+  transition: 0.3s;
+
+  &.checked {
+    background: variables.$dark-green;
+    border-color: variables.$dark-green;
+
+    &::before {
+      content: "✔";
+      font-size: 14px;
+      color: variables.$white;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+}
+.forgot{
+  color: variables.$light-primary2;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-decoration-skip-ink: auto;
+  transition: .3s;
+
+  &:hover{
+    color: variables.$dark-green;
+
+  }
+
+
+}
+
+.register-tools{
+  p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: variables.$gray8;
+    transition: .3s;
+
+    a{
+      color: variables.$light-primary2;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17.07px;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      text-decoration-thickness: auto;
+      text-decoration-skip-ink: auto;
+      transition: .3s;
+      &:hover{
+        color: variables.$dark-green;
+
+      }
+    }
+  }
+}

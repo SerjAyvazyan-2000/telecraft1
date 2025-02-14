@@ -1,0 +1,133 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+.clients-wrapper{
+  height: 100%;
+
+}
+.clients-section {
+  padding: 50px 41px 110px 70px;
+  width: 100%;
+  max-width: 1634px;
+  border-radius: 50px 0 0 50px;
+  background: variables.$white2;
+  height: 100%;
+
+}
+
+
+.clients-list {
+  margin-top: 45px;
+
+  & > :not(:last-child) {
+    margin: 0 0 15px 0;
+  }
+}
+
+.client-item {
+  background: variables.$white6;
+  border-radius: 10px;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 20px;
+  border-bottom: 1px solid variables.$white4;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    background: variables.$light-green2;
+
+    .client-name {
+      color: variables.$black;
+
+    }
+  }
+  &.active {
+    background: variables.$light-green2;
+
+    .client-name {
+      color: variables.$black;
+
+    }
+  }
+
+}
+
+.client-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: variables.$gray2;
+  transition: .3s;
+
+}
+
+.client-actions {
+  gap: 20px;
+}
+
+.client-number {
+  width: 38px;
+  background: variables.$white5;
+  height: 38px;
+  border-radius: 10px;
+
+  span {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.51px;
+    color: variables.$gray6;
+
+  }
+}
+
+.client-chat-icon {
+  width: 38px;
+  background: variables.$white5;
+  height: 38px;
+  border-radius: 10px;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    background: variables.$dark-green;
+
+    i {
+      background: variables.$white;
+
+    }
+  }
+}
+
+.client-more-icon {
+  width: 38px;
+  background: variables.$white5;
+  height: 38px;
+  border-radius: 10px;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    background: variables.$dark-green;
+
+    i {
+      background: variables.$white;
+
+    }
+  }
+}
+
+.chat-icon {
+  font-size: 18px;
+  background: variables.$gray;
+  transition: .3s;
+
+}
+
+.client-more {
+  font-size: 18px;
+  background: variables.$gray;
+  transition: .3s;
+
+
+}

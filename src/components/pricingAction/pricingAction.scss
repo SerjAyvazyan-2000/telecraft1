@@ -1,0 +1,122 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+
+.action-price {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14.32px;
+  padding: 12px 10px;
+  background: variables.$white5;
+  border-radius: 10px;
+
+}
+
+.pricing-action {
+  background: variables.$white6;
+  padding: 6px 20px;
+  border-radius: 10px;
+  border-bottom: 1px solid variables.$white4;
+  position: relative;
+
+  &:not(:last-child) {
+    margin: 0 0 15px 0;
+  }
+
+}
+.pricing-action-header{
+  align-items: center;
+  width: 100%;
+
+}
+.pricing-sub-block{
+  margin-top: 15px;
+  gap: 50px;
+}
+.sub-action-title{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+
+}
+
+.pricing-action-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: variables.$gray2;
+
+}
+
+.pricing-action-tolls {
+  gap: 10px;
+}
+
+.action-edit {
+  padding: 8px 10px;
+  height: 38px;
+
+  background: variables.$white5;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    background: variables.$dark-green;
+
+    i {
+      background: variables.$white;
+    }
+  }
+
+}
+
+.action-remove {
+  padding: 8px 10px;
+  height: 38px;
+
+  background: variables.$white5;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    background: variables.$dark-green;
+
+    i {
+      background: variables.$white;
+    }
+  }
+}
+
+.icon-action-edit {
+  font-size: 18px;
+  background: variables.$gray;
+}
+
+.icon-trash {
+  font-size: 18px;
+  background: variables.$gray;
+}
+
+.action-arrow {
+  padding: 8px 14px;
+  height: 38px;
+  background: variables.$white5;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    background: variables.$dark-green;
+
+    i {
+      background: variables.$white;
+    }
+  }
+}
+
+.icon-action-arrow {
+  font-size: 10px;
+  background: variables.$gray;
+}

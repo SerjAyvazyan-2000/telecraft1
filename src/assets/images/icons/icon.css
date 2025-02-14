@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+.icon-edit{
+    mask-image: url(edit.svg);
+    -webkit-mask-image: url(edit.svg);
+}
+.icon-catalog{
+    mask-image: url(catalog.svg);
+    -webkit-mask-image: url(catalog.svg);
+}
+.icon-arrowDown{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+.icon-action-arrow{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+.icon-header-arrow{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+
+.icon-pricing{
+    mask-image: url(pricing.svg);
+    -webkit-mask-image: url(pricing.svg);
+}
+.pricing-icon{
+    mask-image: url(pricing.svg);
+    -webkit-mask-image: url(pricing.svg);
+}
+.icon-shoppingBag{
+    mask-image: url(shoppingBag.svg);
+    -webkit-mask-image: url(shoppingBag.svg);
+}
+.shoppingBag-icon{
+    mask-image: url(shoppingBag.svg);
+    -webkit-mask-image: url(shoppingBag.svg);
+}
+.icon-users{
+    mask-image: url(users.svg);
+    -webkit-mask-image: url(users.svg);
+}
+.users-icon{
+    mask-image: url(users.svg);
+    -webkit-mask-image: url(users.svg);
+}
+.icon-shopping-cart{
+    mask-image: url(shopping-cart.svg);
+    -webkit-mask-image: url(shopping-cart.svg);
+}
+.icon-notification{
+    mask-image: url(notification.svg);
+    -webkit-mask-image: url(notification.svg);
+}
+.icon-log-in{
+    mask-image: url(log-in.svg);
+    -webkit-mask-image: url(log-in.svg);
+}
+.icon-search{
+    mask-image: url(search.svg);
+    -webkit-mask-image: url(search.svg);
+}
+.icon-refresh{
+    mask-image: url(refresh.svg);
+    -webkit-mask-image: url(refresh.svg);
+}
+.icon-plus{
+    mask-image: url(plus.svg);
+    -webkit-mask-image: url(plus.svg);
+}
+.icon-action-edit{
+    mask-image: url(edit.svg);
+    -webkit-mask-image: url(edit.svg);
+}
+.icon-trash{
+    mask-image: url(trash.svg);
+    -webkit-mask-image: url(trash.svg);
+}
+.icon-select-cart{
+    mask-image: url(shopping-cart.svg);
+    -webkit-mask-image: url(shopping-cart.svg);
+}
+.select-arrowDown{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+.icon-moreVertical{
+    mask-image: url(moreVertical.svg);
+    -webkit-mask-image: url(moreVertical.svg);
+}
+.application-refresh{
+    mask-image: url(refresh.svg);
+    -webkit-mask-image: url(refresh.svg);
+}
+.application-plus{
+    mask-image: url(plus.svg);
+    -webkit-mask-image: url(plus.svg);
+}
+.icon-more{
+    mask-image: url(moreVertical.svg);
+    -webkit-mask-image: url(moreVertical.svg);
+}
+.method-trash{
+    mask-image: url(trash2.svg);
+    -webkit-mask-image: url(trash2.svg);
+}
+
+.icon-save{
+    mask-image: url(save.svg);
+    -webkit-mask-image: url(save.svg);
+}
+.client-more{
+    mask-image: url(moreVertical.svg);
+    -webkit-mask-image: url(moreVertical.svg);
+}
+.chat-icon{
+    mask-image: url(message-square.svg);
+    -webkit-mask-image: url(message-square.svg);
+}
+.user-icon{
+    mask-image: url(user.svg);
+    -webkit-mask-image: url(user.svg);
+}
+
+.user-lock{
+    mask-image: url(lock.svg);
+    -webkit-mask-image: url(lock.svg);
+}

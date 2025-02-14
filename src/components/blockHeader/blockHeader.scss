@@ -1,0 +1,37 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+
+.block-header {
+  margin-top: 38px;
+}
+
+.pricing-header-block {
+  gap: 4px;
+}
+
+.block-name {
+  width: 100%;
+  align-items: center;
+  gap: 50px;
+}
+
+.pricing-search {
+  max-width: 292px;
+}
+.clients-search{
+  max-width: 461px;
+
+}
+
+.block-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26.82px;
+  color: variables.$black;
+
+}
+
+
+.application-btn{
+  min-width: 239px;
+}

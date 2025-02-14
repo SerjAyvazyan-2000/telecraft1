@@ -1,0 +1,11 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+
+.catalog-section{
+  padding: 50px 41px 110px 70px;
+  width: 100%;
+  max-width: 1634px;
+  border-radius: 50px 0 0 50px;
+  background: variables.$white2;
+  height: 100%;
+}

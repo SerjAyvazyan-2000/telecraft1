@@ -1,0 +1,77 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+
+.pricing-section {
+  padding: 50px 70px 113px 70px;
+  max-width: 1634px;
+  border-radius: 50px 0 0 50px;
+  background: variables.$white2;
+  height: 100%;
+}
+
+.pricing-table {
+  margin-top: 60px;
+
+}
+
+.pricing-table-header {
+  border-bottom: 1px solid variables.$white4;
+  padding-bottom: 13px;
+}
+
+.pricing-table-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: variables.$black;
+
+}
+
+.pricing-table-header {
+  align-items: center;
+  width: 100%;
+}
+
+.pricing-table-data {
+  gap: 10px;
+}
+
+.data-start {
+  font-weight: 500;
+  font-size: 12px;
+  color: variables.$light-gray2;
+  line-height: 14.63px;
+
+}
+
+.data-end {
+  font-weight: 500;
+  font-size: 12px;
+  color: variables.$light-gray2;
+  line-height: 14.63px;
+}
+
+.data-line {
+  width: 5px;
+  height: 1px;
+  background: variables.$light-gray2;
+
+}
+
+.data-for {
+  padding: 4px 10px;
+  background: variables.$green;
+  border-radius: 5px;
+
+  span {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.63px;
+    color: variables.$white;
+
+  }
+}
+
+.pricing-actions {
+  margin-top: 16px;
+}

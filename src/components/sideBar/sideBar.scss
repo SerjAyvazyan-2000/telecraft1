@@ -1,0 +1,158 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+
+.logo {
+  max-width: 85px;
+  width: 100%;
+}
+
+.sideBar-block {
+  max-width: 286px;
+  width: 100%;
+  background: variables.$gray;
+  padding: 34px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 60px;
+    height: 100%;
+    background: variables.$gray;
+
+  }
+
+}
+
+.sideBar-user-info {
+  margin-top: 79px;
+  position: relative;
+}
+
+.edit-tools {
+  position: absolute;
+  top: 89px;
+  width: 26px;
+  height: 27px;
+  background: variables.$black;
+  border-radius: 50%;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .3s;
+
+  &:hover {
+    background: variables.$dark-green;
+
+  }
+}
+
+.user-img {
+  max-width: 105px;
+  width: 100%;
+  height: 105px;
+
+}
+
+.user-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-name {
+  margin-top: 20px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.51px;
+  text-align: center;
+  color: variables.$white;
+
+}
+
+.icon-edit {
+  font-size: 13px;
+  background: variables.$white;
+
+}
+
+.sideBar-menu {
+  margin-top: 41px;
+}
+
+.menu-list {
+
+  & > :not(:last-child) {
+    margin: 0 0 13px 0;
+  }
+}
+
+.menu-link {
+  gap: 30px;
+  padding: 10px 20px;
+  transition: .3s;
+  border-radius: 10px;
+  font-family: 'Gilroy',sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14.32px;
+  color: variables.$light-gray;
+
+
+  &:hover {
+    background: variables.$dark-green;
+    color: variables.$white;
+
+    .menu-icon {
+      font-size: 12px;
+      background: variables.$white;
+    }
+    .icon-arrowDown {
+      background: variables.$white;
+
+    }
+  }
+
+
+
+
+}
+
+.menu-item {
+  &.active {
+    .menu-link{
+      background: variables.$dark-green;
+      color: variables.$white;
+
+      .menu-icon {
+        font-size: 12px;
+        background: variables.$white;
+      }
+      .icon-arrowDown {
+        background: variables.$white;
+
+      }
+    }
+
+  }
+}
+
+.menu-icon {
+  font-size: 12px;
+  background: variables.$light-gray;
+  transition: .3s;
+}
+
+.icon-arrowDown {
+  font-size: 10px;
+  background: variables.$light-gray;
+  margin-left: auto;
+
+}

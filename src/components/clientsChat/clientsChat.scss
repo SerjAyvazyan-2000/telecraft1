@@ -1,0 +1,127 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+
+.clients-chat-box {
+  background-color: variables.$white;
+  min-height: 100vh;
+  height: 100%;
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+  min-width: 0;
+  max-width: 0;
+  padding: 0;
+
+  &.active {
+    max-width: 467px;
+    width: 100%;
+    min-width: 467px;
+    padding: 50px 30px 120px 30px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.client-chat-name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29.26px;
+  color: variables.$black;
+
+}
+
+.chat-title {
+  margin-top: 5px;
+  color: variables.$gray8;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29.26px;
+
+}
+
+.chat-cnt {
+  margin-top: 15px;
+  border: 1px solid variables.$white3;
+  border-radius: 10px;
+  min-height: 757px;
+  padding: 10px;
+
+  & > :not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.message-text {
+  background: variables.$white9;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 328px;
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: variables.$black;
+
+  }
+
+}
+
+.message-author {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.63px;
+  margin-top: 10px;
+  color: variables.$gray9;
+
+
+}
+
+.incoming-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.outgoing-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.chat-message-text{
+  margin-top: 15px;
+  width: 100%;
+}
+
+.message-text-label {
+  height: 102px;
+  width: 100%;
+
+  textarea {
+    width: 100%;
+    height: 100%;
+    background: variables.$white;
+    border: 1px solid variables.$white3;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: variables.$gray7;
+    transition: .3s;
+    resize: none;
+
+
+    &:focus {
+      border: 1px solid variables.$dark-green;
+    }
+  }
+}
+.chat-btn-cnt{
+  margin-top: 15px;
+  width: 100%;
+
+  button{
+    width: 100%;
+  }
+}

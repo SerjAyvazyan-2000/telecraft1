@@ -1,0 +1,229 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+
+
+.applications-block {
+  margin-top: 45px;
+  gap: 15px;
+  justify-content: space-between;
+
+  &.direction-column{
+    flex-direction: column;
+  }
+}
+
+.applications-wrapper{
+  width: 100%;
+  height: 100%;
+}
+.applications-section {
+  padding: 50px 50px 113px 50px;
+  width: 100%;
+  max-width: 1634px;
+  border-radius: 50px 0 0 50px ;
+  background: variables.$white2;
+  height: 100%;
+}
+
+.applications-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26.82px;
+  color: variables.$black;
+
+}
+
+.applications-list-block {
+  max-width: 1045px;
+  width: 100%;
+}
+
+.payment-block {
+  max-width: 452px;
+  width: 100%;
+
+  &.mw-100{
+    max-width: 100%;
+
+  }
+
+}
+
+.applications-list-header {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.payment-block-header {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.applications-icons {
+  gap: 32px;
+}
+
+.applications-icon {
+  background: variables.$light-blue;
+  font-size: 24px;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    background: variables.$dark-green;
+  }
+}
+
+.applications-list {
+  margin-top: 28px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.applications-item {
+  //flex: 1 1 20%;
+  border-bottom: 1px solid variables.$white4;
+  background: variables.$white6;
+  border-radius: 10px;
+  position: relative;
+  padding: 15px;
+  max-width: 250px;
+  width: 100%;
+
+}
+
+.application-tolls {
+  position: absolute;
+  top: 9px;
+  right: 7px;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: variables.$white5;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    background: variables.$dark-green;
+
+    .icon-more {
+      background: variables.$white;
+    }
+  }
+}
+
+.icon-more {
+  font-size: 18px;
+  background: variables.$light-blue3;
+  transition: .3s;
+
+}
+
+.applications-item-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  text-align: center;
+  color: variables.$black;
+
+}
+
+.payment-methods {
+  gap: 15px;
+  margin-top: 28px;
+  &.direction-row{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.payment-method {
+  position: relative;
+  background: variables.$white8;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 234px;
+  overflow: hidden;
+  padding: 20px 50px 20px 20px;
+  flex: 1 1 48%;
+}
+
+.carts-method {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.crypt-method {
+  align-items: center;
+}
+
+.payment-method-img {
+  position: absolute;
+
+}
+
+.ton-method-img {
+  margin-left: -30px;
+}
+
+.method-img--one {
+  top: 0;
+  right: 40px;
+}
+
+.method-img--two {
+  top: 0;
+  right: -20px;
+}
+
+.payment-method-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.26px;
+  color: variables.$black;
+
+}
+
+.payment-currency {
+  padding: 5px 13px;
+  background: variables.$white;
+  border-radius: 10px;
+  margin-top: 15px;
+  max-width: max-content;
+
+  span {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.51px;
+    color: variables.$gray;
+
+  }
+}
+
+.remove-method {
+  background: variables.$white;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    background: variables.$red;
+
+    .method-trash{
+      font-size: 18px;
+      background: variables.$white;
+    }
+  }
+}
+.method-trash{
+  font-size: 18px;
+  background: variables.$black;
+  transition: .3s;
+}

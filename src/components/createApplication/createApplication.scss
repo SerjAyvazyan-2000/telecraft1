@@ -1,0 +1,106 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+
+
+.icon-save{
+ font-size: 18px;
+  background: variables.$white;
+
+}
+
+.create-title {
+ font-weight: 500;
+ font-size: 24px;
+ line-height: 29.26px;
+ color: variables.$black;
+
+}
+
+
+.create-box {
+ min-width: 0;
+ max-width: 0;
+ background: variables.$white;
+ padding: 0;
+ min-height: 100vh;
+ height: 100%;
+ transition: .3s;
+ opacity: 0;
+ visibility: hidden;
+
+
+ &.active {
+  max-width: 467px;
+  min-width: 467px;
+  padding: 50px 30px 30px 30px;
+  opacity: 1;
+  visibility: visible;
+ }
+
+}
+
+.create-inputs {
+ margin-top: 35px;
+ gap: 15px;
+}
+
+.create-label {
+ width: 100%;
+ height: 46px;
+
+ input {
+  width: 100%;
+  height: 100%;
+  background: variables.$white;
+  border: 1px solid variables.$white3;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: variables.$gray7;
+  transition: .3s;
+
+
+  &:focus {
+   border: 1px solid variables.$dark-green;
+  }
+
+ }
+}
+
+.create-textarea-label {
+ width: 100%;
+ height: 129px;
+
+
+ textarea {
+  width: 100%;
+  height: 100%;
+  background: variables.$white;
+  border: 1px solid variables.$white3;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: variables.$gray7;
+  transition: .3s;
+  resize: none;
+
+
+  &:focus {
+   border: 1px solid variables.$dark-green;
+  }
+
+ }
+}
+
+.currencies-inputs {
+ gap: 15px;
+}
+
+.create-tools {
+ gap: 15px;
+
+}
