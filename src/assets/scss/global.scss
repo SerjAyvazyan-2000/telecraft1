@@ -153,8 +153,51 @@
   }
 
 }
+.create-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29.26px;
+  color: variables.$black;
+
+}
+
+
+.create-box {
+  min-width: 0;
+  max-width: 0;
+  background: variables.$white;
+  padding: 0;
+  min-height: 100vh;
+  height: 100%;
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+
+
+  &.active {
+    max-width: 467px;
+    min-width: 467px;
+    padding: 50px 30px 30px 30px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+
 
 .text-wrap {
   display: block;
 }
 
+.gray-arrow-up{
+  font-size: 12px;
+  background: variables.$gray10;
+  transition: .3s;
+  transform: rotate(180deg);
+}
+.gray-arrow-down{
+  font-size: 12px;
+  background: variables.$gray10;
+  transition: .3s;
+}

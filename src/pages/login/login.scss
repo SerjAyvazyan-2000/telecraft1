@@ -1,38 +1,42 @@
 @use '../../assets/scss/variables';
 @use '../../assets/scss/mixin';
 
-.login-section{
+.login-section {
   gap: 18px;
 }
-.login-description{
+
+.login-description {
   padding-top: 50px;
   max-width: 674px;
   width: 100%;
 }
-.login-media{
+
+.login-media {
   padding-top: 20px;
   max-width: 1183px;
   width: 100%;
 
 }
-.login-form{
+
+.login-form {
   margin-top: 200px;
   max-width: 407px;
   width: 100%;
   gap: 20px;
 }
-.login-inputs-box{
+
+.login-inputs-box {
   width: 100%;
   gap: 20px;
 }
 
-.login-label{
+.login-label {
   max-width: 407px;
   width: 100%;
   height: 46px;
   position: relative;
 
-  input{
+  input {
     width: 100%;
     height: 100%;
     border: 1px solid variables.$white3;
@@ -44,48 +48,52 @@
     color: variables.$gray7;
     transition: .3s;
 
-    &:focus{
+    &:focus {
       border: 1px solid variables.$dark-green;
     }
 
   }
 }
-.login-bnt{
+
+.login-bnt {
   width: 100%;
 
-  button{
+  button {
     width: 100%;
 
   }
 }
-.input-icon{
+
+.input-icon {
   font-size: 24px;
   background: variables.$light-primary2;
   position: absolute;
   left: 10px;
   top: 11px;
 }
-.login-tools{
+
+.login-tools {
   width: 100%;
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
 }
-.remember-me{
+
+.remember-me {
   gap: 10px;
   cursor: pointer;
   transition: .3s;
 
 
-  &:hover{
-    p{
+  &:hover {
+    p {
       color: variables.$dark-green;
 
     }
 
   }
 
-  p{
+  p {
     font-weight: 400;
     font-size: 14px;
     line-height: 17.07px;
@@ -94,7 +102,8 @@
 
   }
 }
-.remember-me-icon{
+
+.remember-me-icon {
   width: 19px;
   height: 19px;
   border: 1px solid variables.$white3;
@@ -118,7 +127,8 @@
   }
 
 }
-.forgot{
+
+.forgot {
   color: variables.$light-primary2;
   font-weight: 400;
   font-size: 14px;
@@ -129,7 +139,7 @@
   text-decoration-skip-ink: auto;
   transition: .3s;
 
-  &:hover{
+  &:hover {
     color: variables.$dark-green;
 
   }
@@ -137,15 +147,15 @@
 
 }
 
-.register-tools{
-  p{
+.register-tools {
+  p {
     font-weight: 400;
     font-size: 14px;
     line-height: 17.07px;
     color: variables.$gray8;
     transition: .3s;
 
-    a{
+    a {
       color: variables.$light-primary2;
       font-weight: 400;
       font-size: 14px;
@@ -155,7 +165,8 @@
       text-decoration-thickness: auto;
       text-decoration-skip-ink: auto;
       transition: .3s;
-      &:hover{
+
+      &:hover {
         color: variables.$dark-green;
 
       }

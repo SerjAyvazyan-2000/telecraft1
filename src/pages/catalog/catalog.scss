@@ -1,11 +1,208 @@
 @use '../../assets/scss/variables';
 @use '../../assets/scss/mixin';
 
-.catalog-section{
+.catalog-section {
   padding: 50px 41px 110px 70px;
   width: 100%;
   max-width: 1634px;
   border-radius: 50px 0 0 50px;
   background: variables.$white2;
   height: 100%;
+}
+.catalog-wrapper{
+  display: flex;
+  height: 100%;
+
+}
+
+.catalog-list {
+  margin-top: 45px;
+}
+
+.catalog-item {
+  background: variables.$white;
+  border-bottom: 1px solid variables.$white4;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+
+
+  &.active{
+    .category-sub-block{
+      margin-top: 15px;
+      max-height: 500px;
+      opacity: 1;
+      visibility: visible;
+    }
+    .catalog-arrow{
+      transform:rotate(180deg); ;
+    }
+
+  }
+}
+
+
+.category-sub-block {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+
+  & > :not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.category-icon-bg {
+  background: variables.$white5;
+  border-radius: 10px;
+  width: 38px;
+  height: 38px;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    background: variables.$dark-green;
+
+    i {
+      background: variables.$white;
+    }
+  }
+}
+
+.catalog-arrow {
+  font-size: 12px;
+  background: variables.$gray10;
+  transition: .3s;
+
+}
+
+.category-arrows {
+  gap: 10px;
+}
+
+.catalog-arrow-up {
+  font-size: 12px;
+  background: variables.$gray10;
+  transition: .3s;
+  transform: rotate(180deg);
+}
+
+.catalog-more-icon {
+  font-size: 20px;
+  background: variables.$gray10;
+  transition: .3s;
+}
+
+.category-item-name {
+  gap: 20px;
+}
+
+.category-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: variables.$gray2;
+}
+
+.category-item-actions {
+  gap: 50px;
+}
+
+.category-number {
+  background: variables.$white5;
+  border-radius: 10px;
+  width: 34px;
+  height: 38px;
+  transition: .3s;
+  cursor: pointer;
+
+
+  span {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.51px;
+    color: variables.$gray6;
+
+  }
+}
+
+.category-settings-icon {
+  background: variables.$white5;
+  border-radius: 10px;
+  width: 34px;
+  height: 38px;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    background: variables.$dark-green;
+
+    i {
+      background: variables.$white;
+    }
+  }
+}
+
+.folderPlus-bg {
+  background: variables.$white5;
+  border-radius: 10px;
+  width: 34px;
+  height: 38px;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    background: variables.$dark-green;
+
+    i {
+      background: variables.$white;
+    }
+  }
+}
+
+.icon-settings {
+  font-size: 17px;
+  background: variables.$gray10;
+}
+
+
+.sub-item-numbers {
+  gap: 35px;
+
+  p {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.51px;
+    color: variables.$gray6;
+  }
+}
+
+.icon-folderPlus {
+  font-size: 18px;
+  background: variables.$gray10;
+}
+
+.sub-item-actions {
+  gap: 25px;
+
+}
+
+.sub-item-tolls {
+  gap: 15px;
+}
+
+.icon-L {
+  background: variables.$gray11;
+  font-size: 14px;
+}
+
+.category-sub-name {
+  gap: 30px;
+}
+.category-sub-item{
+  padding-left: 20px;
 }

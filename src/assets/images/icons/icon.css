@@ -138,3 +138,36 @@
     mask-image: url(lock.svg);
     -webkit-mask-image: url(lock.svg);
 }
+
+.catalog-arrow{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+.catalog-arrow-up{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+.icon-settings{
+    mask-image: url(settings.svg);
+    -webkit-mask-image: url(settings.svg);
+}
+.catalog-more-icon{
+    mask-image: url(moreVertical.svg);
+    -webkit-mask-image: url(moreVertical.svg);
+}
+.icon-L{
+    mask-image: url(L.svg);
+    -webkit-mask-image: url(L.svg);
+}
+.icon-folderPlus{
+    mask-image: url(folderPlus.svg);
+    -webkit-mask-image: url(folderPlus.svg);
+}
+.gray-arrow-up{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+.gray-arrow-down{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}

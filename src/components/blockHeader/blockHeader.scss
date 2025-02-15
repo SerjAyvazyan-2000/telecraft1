@@ -22,7 +22,16 @@
   max-width: 461px;
 
 }
+.catalog-search{
+  max-width: 914px;
+  transition: .3s;
 
+  &.active{
+    max-width: 461px;
+
+  }
+
+}
 .block-title {
   font-weight: 600;
   font-size: 22px;

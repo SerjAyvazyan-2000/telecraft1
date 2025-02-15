@@ -1,0 +1,78 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+
+.create-form {
+  gap: 15px;
+}
+
+.create-tools-items {
+  margin-top: 35px;
+  gap: 15px;
+}
+.more-tools-inputs{
+  gap: 0;
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+
+}
+.more-tools-text{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: variables.$black;
+  transition: .3s;
+
+}
+.more-tools-item{
+  &.active{
+    .more-tools-bg{
+      background: variables.$dark-green;
+      i{
+        background: variables.$white;
+        transform: rotate(180deg);
+
+      }
+    }
+    .more-tools-text{
+      color: variables.$light-primary;
+    }
+
+    .more-tools-inputs{
+      gap: 15px;
+      margin-top: 15px;
+      max-height: 700px;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.more-tools-header{
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+
+  &:hover{
+    .more-tools-bg{
+      background: variables.$dark-green;
+      i{
+        background: variables.$white;
+      }
+    }
+    .more-tools-text{
+      color: variables.$light-primary;
+    }
+  }
+
+}
+
+.more-tools-bg{
+  width: 38px;
+  height: 38px;
+  background: variables.$white5;
+  border-radius: 10px;
+  transition: .3s;
+}
