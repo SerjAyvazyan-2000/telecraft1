@@ -18,6 +18,7 @@ const SideBar = () => {
         { id: 5, label: "Общая статистика",  hasArrow: false, path: "/statistics" },
         { id: 6, label: "Приложения",  hasArrow: false, path: "/applications" },
         { id: 7, label: "Войти ",  hasArrow: false, path: "/login" },
+        { id: 8, label: "Заказы  ", hasArrow: false, path: "/orders" },
 
 
 

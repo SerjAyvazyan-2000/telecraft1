@@ -1,0 +1,287 @@
+@use '../../assets/scss/variables';
+@use '../../assets/scss/mixin';
+
+
+.orders-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.orders-section {
+  padding: 50px 50px 113px 50px;
+  width: 100%;
+  max-width: 1634px;
+  border-radius: 50px 0 0 50px;
+  background: variables.$white2;
+  height: 100%;
+}
+
+.orders-header {
+  gap: 280px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid variables.$white10;
+}
+
+.orders-refresh {
+  background: variables.$dark-green2;
+
+  &:hover{
+    background: variables.$light-green2;
+  }
+}
+
+.orders-search {
+  max-width: 942px;
+  width: 100%;
+}
+
+.orders-list {
+  margin-top: 15px;
+
+
+  & > :not(:last-child) {
+    margin: 0 0 10px 0;
+  }
+}
+
+.order-item {
+  border-bottom: 1px solid variables.$white4;
+  background: variables.$white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition:  .3s;
+
+
+  &.active {
+    .order-sub-block {
+      max-height: 1000px;
+      opacity: 1;
+      visibility: visible;
+      margin-top: 15px;
+
+    }
+  }
+
+  &.active {
+    .order-item-arrow {
+      background: variables.$dark-green;
+
+      i {
+        background: variables.$white;
+      }
+
+      .gray-arrow-down {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &:hover{
+    .order-item-arrow {
+      background: variables.$dark-green;
+
+      i {
+        background: variables.$white;
+      }
+
+    }
+
+    opacity: .8;
+  }
+
+}
+
+.order-sub-block {
+  margin-top: 0;
+  gap: 15px;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.order-sub-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: variables.$black;
+}
+
+.payment-method-info {
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.composition-info {
+  margin-top: 15px;
+  justify-content: space-between;
+
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: variables.$light-gray2;
+  }
+
+  span {
+    padding: 4px 15px;
+    background: variables.$white5;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: variables.$black;
+
+  }
+
+}
+
+.delivery-info {
+  margin-top: 15px;
+
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: variables.$light-gray2;
+  }
+}
+
+.changed {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: variables.$light-gray2;
+
+}
+
+.cart-method {
+  padding: 4px 15px;
+  background: variables.$white5;
+  border-radius: 5px;
+
+  span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: variables.$light-primary3;
+  }
+}
+
+.commission {
+  gap: 5px;
+
+  p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.63px;
+    color: variables.$light-gray2;
+  }
+
+  span {
+    padding: 4px 15px;
+    background: variables.$white5;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: variables.$black;
+
+  }
+}
+
+.well {
+  gap: 5px;
+
+  p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.63px;
+    color: variables.$light-gray2;
+  }
+
+  span {
+    padding: 4px 15px;
+    background: variables.$white5;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: variables.$black;
+
+  }
+}
+
+.order-item-header {
+  justify-content: space-between;
+
+}
+
+.order-item-texts {
+  gap: 20px;
+}
+
+.arrow-bg {
+  width: 38px;
+  height: 38px;
+  background: variables.$white5;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    background: variables.$dark-green;
+
+    i {
+      background: variables.$white;
+    }
+  }
+}
+
+.order-item-number {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: variables.$gray12;
+
+}
+
+.order-author {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: variables.$gray2;
+
+}
+
+.order-item-actions {
+  gap: 10px;
+}
+
+.order-action-bg {
+  width: 34px;
+  height: 38px;
+  background: variables.$white5;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    background: variables.$dark-green;
+
+    i {
+      background: variables.$white;
+    }
+  }
+
+  i {
+    font-size: 18px;
+    background: variables.$gray10;
+  }
+}
+
+.icon-order-more {
+  font-size: 18px;
+  background: variables.$gray10;
+}

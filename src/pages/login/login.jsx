@@ -1,7 +1,7 @@
 import './login.scss'
 import {useEffect, useState} from "react";
 import logo from '../../assets/images/logo.svg'
-import loginMedia from '../../assets/images/loginMedia.png'
+import loginMedia from '../../assets/images/loginMedia.webp'
 import {Link} from "react-router-dom";
 import Button from "../../ui/button/button.jsx";
 
@@ -28,6 +28,8 @@ const Login = () => {
                 <img src={logo} alt=""/>
             </Link>
             <form className='login-form G-column-center'>
+
+                <h2 className='login-title'>Авторизация</h2>
                 <div className='login-inputs-box G-flex-column'>
 
                     <div className='login-input-block'>
@@ -48,7 +50,7 @@ const Login = () => {
 
                 </div>
                 <div className='login-bnt'>
-                    <Button text='Войти' variant={'btn-primary'}/>
+                    <Button text='Войти' variant={'btn-green'}/>
 
                 </div>
                 <div className='login-tools G-align-center'>
